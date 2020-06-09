@@ -1,0 +1,3 @@
+This is a version of eval-here for emacs-24.5. This was back when cl-symbol-macrolet would compare
+the symbol-name string of symbols in order to determine how to apply the symbol macro bindings.
+I have modified my code slightly in order to get it to work on emacs-24.5. No guarantees.
