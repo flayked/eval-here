@@ -1,0 +1,4 @@
+This is the first version of eval-here I wrote, tested on emacs-26.3. cl--sm-macroexpand has
+changed since emacs-26.3, so I have a newer version of eval-here in the top directory of
+this repository, but the version in this directory is the original working version for
+emacs-26.3.
