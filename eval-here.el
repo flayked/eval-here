@@ -34,7 +34,7 @@
 
 ;; https://letoverlambda.com/textmode.cl/guest/chap6.html
 
-;; The function eval-here behaves like eval, except that lexical,
+;; The function-like macro eval-here behaves like eval, except that lexical,
 ;; cl-symbol-macrolet, and cl-macrolet bindings will be available
 ;; to use within the evaluated form.
 
