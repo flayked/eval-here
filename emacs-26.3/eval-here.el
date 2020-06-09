@@ -29,6 +29,8 @@
 
 ;;; Commentary:
 
+;; This version of eval-here seems to work on emacs-26.3.
+
 ;; This is an ugly hack to get something resembling the pandoric-eval
 ;; macro from Let Over Lambda.
 
