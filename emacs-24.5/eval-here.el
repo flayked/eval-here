@@ -165,7 +165,7 @@ except that it additionally expands symbol macros."
 ;; lexical scope.
 (defun eval--here (first second mylambda mymac mylexbinding eval-here--body)
   (let ((macroexpand-all-environment mymac))
-    (eval `(cl-symbol-macrolet ,(map 'list (lambda (x y) (list x `(gv-deref (quote ,y)))) second first) ,eval-here--body)
+    (eval `(cl-symbol-macrolet ,(map 'list (lambda (x y) (list x `(gv-deref (quote ,y)))) second first) ,(macroexpand-all eval-here--body mymac))
 	  (when mylexbinding (car (cdr mylambda))))))
 
 (defmacro eval-here (form)
